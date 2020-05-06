@@ -3,6 +3,7 @@ Streaming data from a Flask REST API and streaming the response into PostgreSQL
 
 ![](streaming.gif)
 
+The Python process that reads the huge amount of data, before inserting into Postgres is able to process the incoming chunks by use of the stream=True option on the Requests module, and the iter_content method of the Request response. The mock 3rd party API, which hosts the potentially petabytes of data, makes use of the Flask stream_with_context method.
 Using pgAdmin/PostgreSQL
 
 1. Create a new database called `stream_test` in a local install of PostgreSQL
