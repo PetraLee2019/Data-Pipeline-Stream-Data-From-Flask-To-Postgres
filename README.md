@@ -1,9 +1,9 @@
 # Stream Data From Flask To Postgres
-A tutorial on streaming data from a Flask REST API and streaming the response into PostgreSQL
+Streaming data from a Flask REST API and streaming the response into PostgreSQL
 
 ![](streaming.gif)
 
-Using pgAdmin4
+Using pgAdmin/PostgreSQL
 
 1. Create a new database called `stream_test` in a local install of PostgreSQL
 ![Create a new database called 'stream_test'](create_db.gif)
@@ -32,7 +32,7 @@ Example Response of 10 tuples
 5. Start `$ python ingest.py`
 Expect lots of lines of output written to the console,
 
-6. Go to pgAdmin4 and inspect your new table as it is filling up with data.
+6. Go to pgAdmin and inspect your new table as it is filling up with data.
 ![pgAdmin showing load](pgadmin.gif)
 
 7. Also execute the sql below a few times if you want to see the numbers rise.
